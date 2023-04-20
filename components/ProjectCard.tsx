@@ -1,10 +1,10 @@
 import React, { MouseEvent, useState } from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 interface ProjectCardProps{
     name: string,
     description: string,
-    image: string,
+    image: StaticImageData,
     link: string
 }
 
