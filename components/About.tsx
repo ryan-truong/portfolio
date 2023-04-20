@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic'
 const Globe = dynamic(import('react-globe.gl'), { ssr: false });
 
 const About = () => {
-
     const labelData = [
         {
             lat:32.715736,
@@ -47,8 +46,8 @@ const About = () => {
             text: "Las Vegas, NV",
             color: 'rgba(255, 165, 0, 0.75)'
         },
-
 ]
+
     return(
         <div className="flex flex-row items-center justify-between">
             <p className="ml-32 animate-fadeIn text-lg">
@@ -65,12 +64,16 @@ const About = () => {
                     bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
                     backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
                     labelsData={labelData}
-                    labelLat={d => d.lat}
-                    labelLng={d => d.lng}
-                    labelText={d => d.text}
                     labelSize={1.5}
                     labelDotRadius={1}
-                    labelColor={d => d.color}
+                    labelColor={(d: any) => {
+                        if(d.text === "San Diego, CA"){
+                            return('rgb(37 99 235)')
+                        }
+                        else{
+                            return('rgba(255, 165, 0, 0.75)')
+                        }
+                    }}
                     labelResolution={2}
                 />
                 <h1 className="italic text-center text-sm animate-fadeIn">look around to see where <span className="text-amber-300">i&apos;ve been</span></h1>
