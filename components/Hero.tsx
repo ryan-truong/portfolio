@@ -7,7 +7,7 @@ import { SlSocialSpotify } from "react-icons/sl";
 const Hero = () => {
     return(
         <>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mt-12">
                 <Image src={imgSrc} width={250} height={250} alt="personal image"
                     className="rounded-full animate-fadeInPicture"
                 />
