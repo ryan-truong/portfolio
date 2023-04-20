@@ -1,6 +1,6 @@
 import ProjectCard from '../../components/ProjectCard'
 import fridgescrape from '../../public/fridgescrape.png'
-import lithub from '../../public/teamlithub_banner.png'
+import lithub from '../../public/TeamLitHub_Banner.png'
 import gradecalc from '../../public/grade_calculator.png'
 
 export default function Projects() {
