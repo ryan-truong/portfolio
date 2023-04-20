@@ -12,7 +12,7 @@ const Hero = () => {
                     className="rounded-full animate-fadeInPicture"
                 />
                 <div className="mt-5 animate-fadeIn text-center">
-                    <h1>Hello! I'm
+                    <h1>Hello! I&apos;m
                         <span className="pl-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">
                             Ryan Truong
                         </span>
