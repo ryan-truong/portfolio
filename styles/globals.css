@@ -4,6 +4,9 @@
 
 @layer base{
   body {
-    @apply bg-[#6c6ceb]
+    @apply bg-[#000000] text-white
+  }
+  h1{
+    @apply font-bold text-3xl
   }
 }
