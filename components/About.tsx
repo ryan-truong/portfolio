@@ -51,8 +51,8 @@ const About = () => {
     return(
         <div className="flex flex-row items-center justify-between">
             <p className="ml-32 animate-fadeIn text-lg">
-                My name is <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Ryan Truong</span> and I am a fourth year student a <span className="text-blue-600">UCSD</span>.
-                I am currently studying <span className="text-green-400">Bioinformatics</span> with a minor in <span className="text-fuchsia-500">Computer Science</span>.
+                My name is <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Ryan Truong</span> and I am a recent <span className="text-blue-600">UCSD</span> graduate.
+                My studies focused in <span className="text-green-400">Bioinformatics</span> with a minor in <span className="text-fuchsia-500">Computer Science</span>.
                 On my free time I enjoy hanging out with friends, playing sports,
                 and playing video games.
             </p>
