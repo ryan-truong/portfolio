@@ -33,7 +33,7 @@ const Hero = () => {
                         <FaGithub className="w-10 h-10 p-2"/>
                     </a>
                     <a className="rounded-md border-4 mt-5 mr-4 shadow-lg shadow-pink-500/75 hover:shadow-cyan-500/75 "
-                    href="mailto: ryantruong25@yahoo.com">
+                    href="mailto: ryantruong25@gmail.com">
                         <HiMail className="w-10 h-10 p-2"/>
                     </a>
                     <a className="rounded-md border-4 mt-5 mr-4 shadow-lg shadow-cyan-500/75 hover:shadow-pink-500/75"
