@@ -12,10 +12,10 @@ const open_sans = Open_Sans({
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
-    <main className={open_sans.className}>
-      <Stars/>
-      <Navbar/>
-      <Component {...pageProps} />
-    </main>
+      <main className={open_sans.className}>
+        <Stars/>
+        <Navbar/>
+        <Component {...pageProps} />
+      </main>
   )
 }

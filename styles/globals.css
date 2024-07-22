@@ -10,3 +10,7 @@
     @apply font-bold text-5xl
   }
 }
+
+::-webkit-scrollbar{
+  width: 0
+}
