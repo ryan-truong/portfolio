@@ -1,8 +1,8 @@
 import dynamic from 'next/dynamic'
-
 const Globe = dynamic(import('react-globe.gl'), { ssr: false });
 
 const About = () => {
+
     const labelData = [
         {
             lat:32.715736,
@@ -49,8 +49,8 @@ const About = () => {
 ]
 
     return(
-        <div className="flex flex-row items-center justify-between">
-            <p className="ml-32 animate-fadeIn text-lg">
+        <div id='aboutRef' className="flex flex-row items-center justify-between mt-80">
+            <p className="ml-32 animate-fadeIn text-3xl">
                 My name is <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Ryan Truong</span> and I am a recent <span className="text-blue-600">UCSD</span> graduate.
                 My studies focused in <span className="text-green-400">Bioinformatics</span> with a minor in <span className="text-fuchsia-500">Computer Science</span>.
                 On my free time I enjoy hanging out with friends, playing sports,
@@ -62,7 +62,7 @@ const About = () => {
                     height={500}
                     globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
                     bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                    backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
+                    backgroundColor="black"
                     labelsData={labelData}
                     labelSize={1.5}
                     labelDotRadius={1}

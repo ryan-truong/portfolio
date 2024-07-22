@@ -1,11 +1,11 @@
-import ProjectCard from '../../components/ProjectCard'
-import fridgescrape from '../../public/fridgescrape.png'
-import lithub from '../../public/TeamLitHub_Banner.png'
-import gradecalc from '../../public/grade_calculator.png'
+import ProjectCard from './ProjectCard'
+import fridgescrape from '../public/fridgescrape.png'
+import lithub from '../public/TeamLitHub_Banner.png'
+import gradecalc from '../public/grade_calculator.png'
 
 export default function Projects() {
     return (
-        <div className="flex flex-wrap flex-row justify-center">
+        <div id="projectsRef" className="flex flex-wrap flex-row justify-center mt-96 mb-20">
             <div className="ml-4 mr-4 mt-10 animate-fadeInP1">
                 <ProjectCard name="FridgeScrape" 
                     description="SD Hacks 2022 project focused on sustainibility. See what recipes are available with a set of ingredients."
