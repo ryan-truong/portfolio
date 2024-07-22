@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Navbar = () => {
 
     return(
-        <nav className = 'flex p-4 fixed min-w-full z-10 bg-pink-500/5'>
+        <nav className = 'flex p-3 fixed min-w-full z-10 bg-gradient-to-r from-blue-500/30 to-pink-500/30'>
             <button className = 'hover:text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 italic flex flex-col text-3xl mt-1.5 sm:flex-row ml-5' onClick={() => {
                     const heroRef = document.querySelector("#heroRef")
                     heroRef!.scrollIntoView({
