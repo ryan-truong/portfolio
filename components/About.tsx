@@ -46,11 +46,11 @@ const About = () => {
             text: "Las Vegas, NV",
             color: 'rgba(255, 165, 0, 0.75)'
         },
-]
+    ]
 
     return(
-        <div id='aboutRef' className="flex flex-row items-center justify-between mt-80">
-            <p className="ml-32 animate-fadeIn text-3xl">
+        <div id='aboutRef' className="flex flex-col md:flex-row items-center justify-center sm:mt-80 mt-40 pl-16">
+            <p className="animate-fadeIn text-3xl max-w-md">
                 My name is <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Ryan Truong</span> and I am a recent <span className="text-blue-600">UCSD</span> graduate.
                 My studies focused in <span className="text-green-400">Bioinformatics</span> with a minor in <span className="text-fuchsia-500">Computer Science</span>.
                 On my free time I enjoy hanging out with friends, playing sports,
@@ -58,7 +58,7 @@ const About = () => {
             </p>
             <div className="flex flex-col">
                 <Globe
-                    width={700}
+                    width={350}
                     height={500}
                     globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
                     bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"

@@ -8,7 +8,7 @@ import Cube from './Cube';
 const Hero = () => {
     return(
         <>
-            <div id='heroRef'className="flex flex-col items-center flex-wrap relative top-32">
+            <div id='heroRef'className="flex flex-col items-center relative top-32 pl-12 sm:pl-0">
                 <Image src={imgSrc} width={250} height={250} alt="personal image"
                     className="rounded-full animate-fadeInPicture"
                 />
