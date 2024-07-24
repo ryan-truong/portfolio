@@ -1,14 +1,11 @@
 import Image from 'next/image';
 import imgSrc from 'public/profile_pic.jpg';
-import { FaLinkedinIn, FaGithub} from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
-import { SlSocialSpotify } from "react-icons/sl";
 import Cube from './Cube';
 
 const Hero = () => {
     return(
         <>
-            <div id='heroRef'className="flex flex-col items-center relative top-32 pl-12 sm:pl-0">
+            <div id='heroRef'className="flex flex-col items-center relative top-32 pl-12 sm:pl-0 z-8">
                 <Image src={imgSrc} width={250} height={250} alt="personal image"
                     className="rounded-full animate-fadeInPicture"
                 />
