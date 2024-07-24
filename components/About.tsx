@@ -50,7 +50,7 @@ const About = () => {
 
     return(
         <div id='aboutRef' className="flex flex-col md:flex-row items-center justify-center sm:mt-80 mt-40 pl-16">
-            <p className="animate-fadeIn text-3xl max-w-md">
+            <p className="animate-fadeIn text-3xl max-w-md z-10">
                 My name is <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Ryan Truong</span> and I am a recent <span className="text-blue-600">UCSD</span> graduate.
                 My studies focused in <span className="text-green-400">Bioinformatics</span> with a minor in <span className="text-fuchsia-500">Computer Science</span>.
                 On my free time I enjoy hanging out with friends, playing sports,

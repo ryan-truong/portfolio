@@ -15,7 +15,7 @@ const Cube: React.FC<CubeProps> = props => {
         <div className="hover:cursor-pointer w-24 mr-5" title={props.url}>
             <Canvas>
                 <ambientLight intensity={1.75} />
-                <directionalLight  position={[0,0,0]} />
+                <directionalLight  position={[1,1,1]} />
                 <MyMesh url={props.url} logo={props.logo}/>
             </Canvas>
         </div>
