@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+
 const Globe = dynamic(import('react-globe.gl'), { ssr: false });
 
 const About = () => {
@@ -49,8 +50,8 @@ const About = () => {
     ]
 
     return(
-        <div id='aboutRef' className="flex flex-col md:flex-row items-center justify-center sm:mt-80 mt-40 pl-16">
-            <p className="animate-fadeIn text-3xl max-w-md z-10">
+        <div id='aboutRef' className="flex flex-col md:flex-row items-center justify-center pl-16 sm:mt-80 mt-40">
+            <p className="text-3xl max-w-md z-10">
                 My name is <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Ryan Truong</span> and I am a recent <span className="text-blue-600">UCSD</span> graduate.
                 My studies focused in <span className="text-green-400">Bioinformatics</span> with a minor in <span className="text-fuchsia-500">Computer Science</span>.
                 On my free time I enjoy hanging out with friends, playing sports,
@@ -76,9 +77,10 @@ const About = () => {
                     }}
                     labelResolution={2}
                 />
-                <h1 className="italic text-center text-sm animate-fadeIn">look around to see where <span className="text-amber-300">i&apos;ve been</span></h1>
-                <h1 className="italic text-center text-sm animate-fadeIn">see where <span className="text-blue-600">i live</span></h1>
+                <h1 className="italic text-center text-sm">look around to see where <span className="text-amber-300">i&apos;ve been</span></h1>
+                <h1 className="italic text-center text-sm">see where <span className="text-blue-600">i live</span></h1>
             </div>
+            <h1 className='text-6xl underline rotate-90 invisible md:visible'>About Me</h1>
         </div>
     )
 }

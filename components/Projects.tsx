@@ -5,7 +5,9 @@ import gradecalc from '../public/grade_calculator.png'
 
 export default function Projects() {
     return (
-        <div id="projectsRef" className="flex flex-col md:flex-row justify-center text-center items-center mt-32 sm:mt-96 mb-20 pl-12 sm:pl-0">
+        <>
+        <h1 className='mt-32 sm:mt-96 text-center underline pl-12 sm:pl-0'>Projects</h1>
+        <div id="projectsRef" className="flex flex-col md:flex-row justify-center text-center items-center mb-20 pl-12 sm:pl-0">
             <div className="lg:ml-4 lg:mr-4 mt-10 animate-fadeInP1">
                 <ProjectCard name="FridgeScrape" 
                     description="SD Hacks 2022 project focused on sustainibility. See what recipes are available with a set of ingredients."
@@ -28,6 +30,7 @@ export default function Projects() {
                 />
             </div>
         </div>
+        </>
     )
   }
   
